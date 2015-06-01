@@ -12,6 +12,7 @@ To retrieve these files and work with them:
 5. Hit Finish, Work from There
 
 **NOTE: The security examples will require you to [set up a user in Glassfish](http://docs.oracle.com/javaee/6/tutorial/doc/bnbxj.html) in the group USERS.**
+http://docs.oracle.com/cd/E19798-01/821-1841/bnbxr/index.html
 
 ## Included In This File
 
