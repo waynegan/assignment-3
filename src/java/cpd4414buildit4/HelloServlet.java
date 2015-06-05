@@ -35,16 +35,16 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
 
         try (PrintWriter out = response.getWriter()) {
-            String name = request.getParameter("name");
-            if (name == null) {
-                name = "World";
+            String id = request.getParameter("id");
+            if (id == null) {
+                id = "World";
             }
-            out.println("Hello " + name + "!");
+            out.println("Hello " + id + "!");
             HttpSession session = request.getSession();
             if (session != null) {
                 String prevName = (String) session.getAttribute("prevName");
                 out.println("Weren't you " + prevName + " before?");
-                request.getSession().setAttribute("prevName", name);
+                request.getSession().setAttribute("prevName", id);
             }
         } catch (IOException ex) {
             System.err.println("Something Went Wrong: " + ex.getMessage());
